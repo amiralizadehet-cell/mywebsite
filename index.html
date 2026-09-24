@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>İngilizce & Almanca Özel Dersler — Amir</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<style>
+:root{--ink:#1c1610;--paper:#f6ede0;--terracotta:#b3502e;--gold:#c99a3c;--teal:#2b5f5a;--line:rgba(28,22,16,0.18);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#f3ead9;--paper:#241d16;--line:rgba(243,234,217,0.2)}}
+:root[data-theme="dark"]{--ink:#f3ead9;--paper:#241d16;--line:rgba(243,234,217,0.2)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Manrope",ui-sans-serif,system-ui,sans-serif;min-height:100%;display:flex;justify-content:center;padding:32px 16px calc(32px + env(safe-area-inset-bottom,0px))}
+.poster{width:100%;max-width:640px;background:var(--paper);border:1.5px solid var(--line);position:relative;overflow:hidden;padding:40px 34px 34px}
+.motif{position:absolute;inset:0;pointer-events:none;background-image:repeating-linear-gradient(45deg,var(--line) 0 1px,transparent 1px 34px),repeating-linear-gradient(-45deg,var(--line) 0 1px,transparent 1px 34px);opacity:.5;mask-image:radial-gradient(circle at top right,black,transparent 46%)}
+.eyebrow-row{display:flex;align-items:center;gap:12px;margin-bottom:22px;position:relative}.dot{width:10px;height:10px;background:var(--terracotta);transform:rotate(45deg);flex:none}
+.kicker{font-size:13.5px;letter-spacing:.02em;color:var(--terracotta);font-weight:700}
+h1{font-family:"Fraunces",Georgia,serif;font-weight:600;font-size:clamp(34px,8vw,50px);line-height:1.04;margin:0 0 6px;letter-spacing:-.01em}h1 em{font-style:italic;color:var(--terracotta)}
+.sub{font-size:17px;line-height:1.5;max-width:46ch;margin:14px 0 30px;color:var(--ink);opacity:.88}
+.langs{display:flex;gap:10px;margin-bottom:30px}.lang-pill{border:1.5px solid var(--ink);padding:7px 16px;font-weight:700;font-size:15px;font-family:"Fraunces",serif}.lang-pill.en{border-color:var(--teal);color:var(--teal)}.lang-pill.de{border-color:var(--terracotta);color:var(--terracotta)}
+.purposes{border-top:1.5px solid var(--line);padding-top:22px;margin-bottom:30px}.purposes-title{font-size:13px;font-weight:700;color:var(--gold);margin-bottom:14px}
+ul.grid{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:10px 18px}ul.grid li{font-size:15.5px;line-height:1.4;padding-left:18px;position:relative}ul.grid li::before{content:"";position:absolute;left:0;top:7px;width:7px;height:7px;background:var(--terracotta);transform:rotate(45deg)}
+.teacher-row{display:flex;align-items:baseline;gap:10px;border-top:1.5px solid var(--line);padding-top:22px;margin-bottom:28px}.teacher-label{font-size:13px;color:var(--gold);font-weight:700}.teacher-name{font-family:"Fraunces",serif;font-size:22px;font-weight:600}
+.cta{background:var(--ink);color:var(--paper);padding:22px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;text-decoration:none;transition:opacity .15s ease}.cta:hover{opacity:.9}.cta:active{opacity:.78}.cta-text{display:flex;flex-direction:column;gap:6px;min-width:0}.cta-label{font-size:13.5px;opacity:.75}.cta-number{font-family:"Fraunces",serif;font-size:clamp(22px,5.6vw,28px);font-weight:600;letter-spacing:.01em}.cta-arrow{font-size:22px;flex:none;opacity:.8}
+.qr-block{display:flex;align-items:center;gap:14px;border-top:1.5px solid var(--line);padding-top:22px;margin-top:22px}.qr-wrap{background:#fff;padding:8px;border:1.5px solid var(--line);flex:none;line-height:0}#qrcode img,#qrcode canvas{display:block;width:96px!important;height:96px!important}.qr-copy{font-size:13.5px;line-height:1.5;opacity:.85}
+@media (max-width:420px){.poster{padding:30px 22px 26px}ul.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<main class="poster">
+<div class="motif" aria-hidden="true"></div>
+<div class="eyebrow-row"><span class="dot" aria-hidden="true"></span><span class="kicker">ÖZEL DERS · BİREBİR · ONLINE</span></div>
+<h1>Hedefin ne olursa olsun,<br><em>kendi hızında</em> öğren.</h1>
+<p class="sub">İngilizce ve Almancayı ihtiyacına göre şekillenen birebir online derslerle öğren — sınav, iş, seyahat ya da günlük konuşma, hangisi olursa.</p>
+<div class="langs"><span class="lang-pill en">English</span><span class="lang-pill de">Deutsch</span></div>
+<div class="purposes"><div class="purposes-title">DERS AMAÇLARI</div><ul class="grid"><li>Genel İngilizce &amp; Almanca</li><li>Sınav hazırlığı (IELTS, TestDaF, Goethe)</li><li>İş hayatı için dil</li><li>Konuşma pratiği &amp; akıcılık</li><li>Göç &amp; vize süreçleri için dil</li><li>Çocuklar ve gençler için</li></ul></div>
+<div class="teacher-row"><span class="teacher-label">ÖĞRETMEN</span><span class="teacher-name">Amir</span></div>
+<a class="cta" id="ctaLink" href="#" target="_blank" rel="noopener"><span class="cta-text"><span class="cta-label">Ücretsiz tanışma dersi için WhatsApp'tan yaz</span><span class="cta-number">+49 151 2418 0188</span></span><span class="cta-arrow" aria-hidden="true">→</span></a>
+<div class="qr-block"><div class="qr-wrap"><div id="qrcode"></div></div><p class="qr-copy">Ekrandan tıkla ya da kamerayla QR kodu tarat — WhatsApp mesajı hazır şekilde açılır.</p></div>
+</main>
+<script>
+const phone="4915124180188";const message="Merhaba Amir, İngilizce/Almanca özel ders hakkında bilgi almak istiyorum.";const waUrl="https://wa.me/"+phone+"?text="+encodeURIComponent(message);document.getElementById("ctaLink").href=waUrl;new QRCode(document.getElementById("qrcode"),{text:waUrl,width:96,height:96,colorDark:"#1c1610",colorLight:"#ffffff",correctLevel:QRCode.CorrectLevel.M});
+</script>
+</body>
+</html>
