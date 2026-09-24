@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Contact — Ayla Rostami</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF8; --surface:#FFFFFF; --ink:#1A1D23; --ink-soft:#565D6B;
+    --line:#DCDFE3; --navy:#1F3A5F; --navy-deep:#132840;
+    box-sizing:border-box;
+    padding-top:env(safe-area-inset-top,0px);
+    padding-bottom:env(safe-area-inset-bottom,0px);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14171C; --surface:#1B1F26; --ink:#EDEEF0; --ink-soft:#9BA1AC; --line:#2A2F38; --navy:#6C93C4; --navy-deep:#8FB0DA;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14171C; --surface:#1B1F26; --ink:#EDEEF0; --ink-soft:#9BA1AC; --line:#2A2F38; --navy:#6C93C4; --navy-deep:#8FB0DA;
+  }
+  html{scroll-padding-top:env(safe-area-inset-top,0px);}
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--bg); color:var(--ink); font-family:'Inter', system-ui, sans-serif; line-height:1.6;}
+  h1,h2{font-family:'Libre Caslon Text', Georgia, serif; font-weight:400; margin:0 0 .4em;}
+  a{color:inherit;}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 32px;}
+
+  header{padding:20px 0; position:sticky; top:env(safe-area-inset-top,0px); background:var(--bg); z-index:10; border-bottom:1px solid var(--line);}
+  header .wrap{display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;}
+  .brand{font-family:'Libre Caslon Text', serif; font-size:1.2rem;}
+  .brand em{font-style:italic; color:var(--ink-soft); font-size:.85rem; display:block; font-family:'Inter',sans-serif; margin-top:2px;}
+  nav{display:flex; gap:26px; font-size:.92rem;}
+  nav a{text-decoration:none; border-bottom:1px solid transparent; padding-bottom:2px;}
+  nav a:hover, nav a:focus-visible{border-bottom-color:var(--navy);}
+  nav a[aria-current="page"]{border-bottom-color:var(--navy);}
+
+  main{padding:60px 0 80px;}
+  .section-label{color:var(--ink-soft); font-size:.85rem; margin-bottom:6px;}
+  .contact{display:grid; grid-template-columns:1fr 1.1fr; gap:56px;}
+  @media (max-width:800px){ .contact{grid-template-columns:1fr;} }
+  .contact > div > p{color:var(--ink-soft); max-width:44ch;}
+  .contact-detail{margin:20px 0; font-size:1rem; border-top:1px solid var(--line); padding-top:14px;}
+  .contact-detail span{display:block; font-size:.83rem; color:var(--ink-soft); margin-bottom:2px;}
+  .availability{margin-top:28px; padding:18px 20px; background:var(--surface); border:1px solid var(--line); font-size:.93rem; color:var(--ink-soft);}
+
+  form{display:flex; flex-direction:column; gap:16px;}
+  label{font-size:.86rem; color:var(--ink-soft); display:block; margin-bottom:5px;}
+  input, select, textarea{
+    font-family:inherit; font-size:1rem; padding:11px 12px; border:1px solid var(--line);
+    border-radius:0; background:var(--surface); color:var(--ink); width:100%;
+  }
+  input:focus, select:focus, textarea:focus{border-color:var(--navy); outline:none;}
+  textarea{resize:vertical; min-height:110px;}
+  button{
+    background:var(--navy); color:#fff; border:none; padding:13px 22px;
+    font-size:.98rem; cursor:pointer; align-self:flex-start; font-weight:500;
+  }
+  button:hover{background:var(--navy-deep);}
+  .note{font-size:.85rem; color:var(--ink-soft); margin-top:-4px;}
+
+  footer{padding:30px 0 44px; color:var(--ink-soft); font-size:.88rem; border-top:1px solid var(--line);}
+  :focus-visible{outline:2px solid var(--navy); outline-offset:2px;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">Ayla Rostami<em>Language Instruction</em></div>
+    <nav>
+      <a href="index.html#about">About</a>
+      <a href="index.html#languages">Languages</a>
+      <a href="index.html#process">Process</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <div class="wrap contact">
+    <div>
+      <div class="section-label">Contact</div>
+      <h1>Get in touch</h1>
+      <p>Send a message with your language of interest and current level, and I'll follow up within one business day.</p>
+
+      <div class="contact-detail"><span>Email</span>hello@aylalanguages.com</div>
+      <div class="contact-detail"><span>Location</span>Berlin — teaching online, worldwide</div>
+      <div class="contact-detail"><span>Time zone</span>CET (Central European Time)</div>
+
+      <div class="availability">
+        Currently taking new students for German and English. Turkish and Persian have limited midweek openings — availability is confirmed on the consultation call.
+      </div>
+    </div>
+
+    <form action="mailto:hello@aylalanguages.com" method="post" enctype="text/plain">
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" required>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+      </div>
+      <div>
+        <label for="lang">Language of interest</label>
+        <select id="lang" name="language">
+          <option>English</option>
+          <option>German</option>
+          <option>Turkish</option>
+          <option>Persian</option>
+          <option>Not sure yet</option>
+        </select>
+      </div>
+      <div>
+        <label for="level">Current level</label>
+        <select id="level" name="level">
+          <option>Complete beginner</option>
+          <option>Some basics</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+        </select>
+      </div>
+      <div>
+        <label for="msg">Message</label>
+        <textarea id="msg" name="message" required placeholder="What you're working toward, and anything else that's useful to know"></textarea>
+      </div>
+      <p class="note">This opens your email app to send the message. If that doesn't work on your device, you can reach me directly at hello@aylalanguages.com.</p>
+      <button type="submit">Send message</button>
+    </form>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">© <span id="y"></span> Ayla Rostami — English · German · Turkish · Persian</div>
+</footer>
+
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
